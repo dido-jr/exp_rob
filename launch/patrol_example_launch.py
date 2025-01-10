@@ -13,7 +13,7 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     test_robot_description_share = FindPackageShare(package='rob_nav2').find('rob_nav2')
     default_model_path = os.path.join(test_robot_description_share, 'urdf/robot_camera.xacro')
-    default_world_path = os.path.join(test_robot_description_share, 'worlds/marker_circle.world')
+    default_world_path = os.path.join(test_robot_description_share, 'worlds/assignment2.world')
     rviz_config_path = os.path.join(test_robot_description_share, 'config/rviz.rviz')
     default_planner_path = os.path.join(test_robot_description_share, 'pddl/planner.pddl')
     default_nav_path = os.path.join(test_robot_description_share, 'params', 'nav2_params.yaml')
